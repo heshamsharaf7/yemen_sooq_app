@@ -1,0 +1,13 @@
+import 'package:bab/core/entities/state_mdl.dart';
+import 'package:bab/core/interfaceses/general/add.dart';
+import 'package:bab/core/interfaceses/general/delete.dart';
+import 'package:bab/core/interfaceses/general/get_all.dart';
+import 'package:bab/core/interfaceses/general/get_all_future.dart';
+import 'package:bab/core/interfaceses/general/get_by_id.dart';
+import 'package:bab/core/interfaceses/general/update.dart';
+abstract class StateRepo
+    implements
+        Add<StateMdl>,
+        GetAll<StateMdl>,
+        Update<StateMdl>,
+        Delete<StateMdl>,GetById<StateMdl>,GetAllFuture<StateMdl> {}
